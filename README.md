@@ -13,16 +13,17 @@ A Django-based Customer Relationship Management (CRM) platform for managing cust
 
 ## Technologies Used
 
-- **Django 2.1.7**: Python web framework
+- **Django 4.2.26**: Python web framework (LTS version with security patches)
 - **SQLite**: Database (default)
 - **Bootstrap**: Frontend styling (via static files)
 - **django-widget-tweaks**: Form rendering utilities
+- **django-filter**: Filtering utilities for querysets
 
 ## Prerequisites
 
 Before setting up the project, ensure you have the following installed:
 
-- Python 3.5 to 3.7 (recommended for Django 2.1.7 compatibility)
+- Python 3.8 or higher (recommended: Python 3.10+)
 - pip (Python package manager)
 - Git
 
@@ -184,7 +185,10 @@ The application includes three main models:
 - Secret key is hardcoded in settings.py (change this for production!)
 - DEBUG mode is enabled (disable for production)
 - Static files are served from the `/static/` directory
-- The project uses Django 2.1.7 (consider upgrading for production use)
+- The project uses Django 4.2.26 LTS with security patches for known vulnerabilities
+- **Security**: Upgraded from Django 2.1.7 to address critical vulnerabilities:
+  - Fixed denial-of-service vulnerability in HttpResponseRedirect
+  - Fixed SQL injection vulnerability via _connector keyword argument
 
 ## Contributing
 
