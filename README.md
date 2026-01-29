@@ -6,10 +6,10 @@ A Django-based Customer Relationship Management (CRM) platform for managing cust
 
 - **Dashboard**: Overview of orders, customers, and key metrics (total orders, delivered, pending)
 - **Customer Management**: Create, view, and manage customer profiles with contact information
-- **Product Management**: Manage product catalog with categories (Indoor/Outdoor), pricing, and descriptions
+- **Product Management**: Manage product catalog with categories (Indoor/Out Door), pricing, and descriptions
 - **Order Management**: Full CRUD operations for orders (Create, Read, Update, Delete)
 - **Order Filtering**: Filter orders by status and other criteria
-- **Order Tracking**: Track order status (Pending, Out for Delivery, Delivered)
+- **Order Tracking**: Track order status (Pending, Out for delivery, Delivered)
 
 ## Technologies Used
 
@@ -22,7 +22,7 @@ A Django-based Customer Relationship Management (CRM) platform for managing cust
 
 Before setting up the project, ensure you have the following installed:
 
-- Python 3.6 or higher
+- Python 3.5 to 3.7 (recommended for Django 2.1.7 compatibility)
 - pip (Python package manager)
 - Git
 
@@ -60,6 +60,8 @@ Install Django and required packages:
 pip install django==2.1.7
 pip install django-widget-tweaks
 ```
+
+**Note**: For easier dependency management, you can create a `requirements.txt` file with the above packages and install them all at once with `pip install -r requirements.txt`
 
 ### 4. Navigate to Project Directory
 
