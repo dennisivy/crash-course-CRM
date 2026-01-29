@@ -54,14 +54,18 @@ source venv/bin/activate
 
 ### 3. Install Dependencies
 
-Install Django and required packages:
+Install Django and required packages using the requirements file:
+
+```bash
+pip install -r requirements.txt
+```
+
+Or install packages individually:
 
 ```bash
 pip install django==2.1.7
 pip install django-widget-tweaks
 ```
-
-**Note**: For easier dependency management, you can create a `requirements.txt` file with the above packages and install them all at once with `pip install -r requirements.txt`
 
 ### 4. Navigate to Project Directory
 
@@ -172,7 +176,7 @@ The application includes three main models:
 
 - **Customer**: name, phone, email, date_created
 - **Product**: name, price, category, description, date_created
-- **Order**: customer (FK), product (FK), status, date_created
+- **Order**: customer (FK), product (FK), date_created, status
 
 ## Development Notes
 
