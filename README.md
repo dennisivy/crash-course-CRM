@@ -1,5 +1,9 @@
 # crash-course-CRM
 
+> This project is part of a YouTube tutorial: [Django CRM Crash Course](https://youtu.be/xv_bwpA_aEA?si=qoMvSpLT8gQ_RgcG)
+
+![CRM Dashboard](demo.png)
+
 A Django-based Customer Relationship Management (CRM) platform for managing customers, products, and orders. This project is designed as a crash course example demonstrating Django's core features including models, views, forms, and templates.
 
 ## Features
